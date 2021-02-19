@@ -1,7 +1,7 @@
 // packages
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generatorMarkdown = require('generateMarkdown.js');
+const generatorMarkdown = require('./generateMarkdown');
 
 
 //questions to ask user 
@@ -61,7 +61,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         } else {
-        console.log ("Success");
+        console.log ("Success: ReadMe Created");
         } 
     })
 }
